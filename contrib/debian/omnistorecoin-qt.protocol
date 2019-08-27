@@ -1,0 +1,11 @@
+[Protocol]
+exec=omnistorecoin-qt '%u'
+protocol=omnistorecoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

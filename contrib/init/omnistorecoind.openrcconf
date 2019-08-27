@@ -1,0 +1,26 @@
+# /etc/conf.d/omnistorecoind: config file for /etc/init.d/omnistorecoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/omnistorecoin/omnistorecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/omnistorecoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/omnistorecoind.pid"
+
+# Where to write omnistorecoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/omnistorecoind"
+
+# User and group to own omnistorecoind process
+#BITCOIND_USER="omnistorecoin"
+#BITCOIND_GROUP="omnistorecoin"
+
+# Path to omnistorecoind executable
+#BITCOIND_BIN="/usr/bin/omnistorecoind"
+
+# Nice value to run omnistorecoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

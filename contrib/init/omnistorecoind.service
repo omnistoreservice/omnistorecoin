@@ -1,0 +1,26 @@
+[Unit]
+Description=OmniStoreCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=omnistorecoin
+Group=omnistorecoin
+
+Type=forking
+PIDFile=/var/lib/omnistorecoind/omnistorecoind.pid
+
+ExecStart=/usr/bin/omnistorecoind -daemon -pid=/var/lib/omnistorecoind/omnistorecoind.pid \
+          -conf=/etc/omnistorecoin/omnistorecoin.conf -datadir=/var/lib/omnistorecoind
+
+ExecStop=-/usr/bin/omnistorecoin-cli -conf=/etc/omnistorecoin/omnistorecoin.conf \
+         -datadir=/var/lib/omnistorecoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

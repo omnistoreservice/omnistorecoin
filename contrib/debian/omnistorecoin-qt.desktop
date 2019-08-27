@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OmniStoreCoin
+Comment=OmniStoreCoin P2P Cryptocurrency
+Comment[fr]=OmniStoreCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=OmniStoreCoin, eşten eşe kriptografik sanal para birimi
+Exec=omnistorecoin-qt %u
+Terminal=false
+Type=Application
+Icon=omnistorecoin128
+MimeType=x-scheme-handler/omnistorecoin;
+Categories=Office;Finance;
