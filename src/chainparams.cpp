@@ -150,7 +150,7 @@ public:
         nTargetSpacing = 1 * 60;  // OmniStoreCoin: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 45000000 * COIN;
+        nMaxMoneyOut = 45000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 150;
